@@ -1,0 +1,26 @@
+<body>
+    <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput [(ngModel)]="Search">
+    </mat-form-field>
+    &nbsp;
+    <button mat-raised-button (click)=display()>Display</button>
+    <button mat-raised-button routerLink="/addtask">Add Task</button>
+    <br><br>
+    <table>
+        <thead>
+            <th>User ID</th>
+            <th>ID</th>
+            &nbsp;
+            <th>Title</th>
+            <th>Completed</th>
+        </thead>
+        <tr *ngFor = "let a of data1 | filter : Search">
+            <td class="a">{{a.userId}}</td>
+            <td class="a">{{a.id}}</td>
+            &nbsp;
+            <td>{{a.title}}</td>
+            <td class="a">{{a.completed}}</td>
+        </tr>
+    </table>
+</body>

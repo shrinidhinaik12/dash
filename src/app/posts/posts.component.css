@@ -1,0 +1,26 @@
+body{
+    margin-top: -22px;
+    background-color: black;
+    height: inherit;
+    color: white;
+}
+h1{
+    padding-top: 20px;
+    margin-left: 50px;
+}
+table{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.userId{
+    width: 80px;
+    text-align: center;
+}
+.id{
+    margin: 20px;
+    text-align: center;
+}
+button{
+    background-color: white;
+    color: black;
+}

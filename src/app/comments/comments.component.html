@@ -1,0 +1,21 @@
+<body>
+    <h1>COMMENTS</h1>
+<table>
+    <thead>
+        <th style="width: 80px; text-align: center;">POST-ID</th>
+        <th style="width: 60px; text-align: center">ID</th>
+        &nbsp;
+        <th>NAME</th>
+        <th>E-MAIL</th>
+        <th>BODY</th>
+    </thead>
+    <tr *ngFor = "let data of variable">
+        <td style="width: 80px; text-align: center;">{{data.postId}}</td>
+        <td style="width: 60px; text-align: center;">{{data.id}}</td>
+        &nbsp;
+        <td>{{data.name}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.body}}</td>
+    </tr>
+</table>
+</body>

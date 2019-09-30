@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "name": "Shree",
+      "age": 21,
+      "education": "BE",
+      "id": 1
+    },
+    {
+      "name": "Akshata",
+      "age": 95,
+      "education": "10th fail",
+      "id": 2
+    },
+    {
+      "name": "raji",
+      "age": 21,
+      "education": "ca",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

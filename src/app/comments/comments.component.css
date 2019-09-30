@@ -1,0 +1,17 @@
+
+body{
+    margin-top: -22px;
+    background-color: black;
+    color: white;
+}
+a{
+    width: 80px;
+    text-align: center;
+}
+h1{
+    padding-top: 30px;
+    margin-left:  20px;
+}
+table{
+    margin-left: 10px;
+}

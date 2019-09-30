@@ -1,0 +1,21 @@
+<body>
+    <h1>Posts.</h1>
+    <table>
+        <thead>
+            <th>User ID</th>
+            <th>ID</th>
+            &nbsp;
+            <th>Title</th>
+            <th>Body</th>
+        </thead>
+        <tr *ngFor = "let a of data1">
+            <td class="userId">{{a.userId}}</td>
+            <td class="id">{{a.id}}</td>
+            &nbsp;
+            <td>{{a.title}}}</td>
+            <td>{{a.body}}</td>
+            &nbsp;
+            <td><button mat-button (click)="view(a.id)">View Comment</button></td>
+        </tr>
+    </table>
+</body>

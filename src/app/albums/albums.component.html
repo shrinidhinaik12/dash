@@ -1,0 +1,18 @@
+<body>
+    <h1>Albums</h1>
+    <table>
+        <thead>
+            <th>User ID</th>
+            <th>ID</th>
+            &nbsp;
+            <th>Title</th>
+        </thead>
+        <tr *ngFor = "let a of data1">
+            <td class="a">{{a.userId}}</td>
+            <td class="a">{{a.id}}</td>
+            &nbsp;
+            <td class="a">{{a.title}}</td>
+            <td><button mat-raised-button (click) = "next(a.id)">Photos</button></td>
+        </tr>
+    </table>
+</body>

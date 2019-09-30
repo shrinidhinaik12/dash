@@ -1,0 +1,15 @@
+<body>
+    <h1>Photos List</h1>
+    --------------------
+    <br><br>
+    <div *ngFor = "let a of data1">
+        <p><strong>ALBUM-ID : </strong> {{a.albumId}}</p>
+        <p><strong>ID : </strong>{{a.id}}</p>
+        <p><strong>TITLE : </strong>{{a.title}}</p>
+        <p><strong>URL : </strong>{{a.url}}</p>
+        <p><strong>THUMBNAIL_URL : </strong>{{a.thumbnailUrl}}</p>
+        <button mat-raised-button (click)="pic(a)">Display Photo</button>
+        <br><br>
+        -----------------------------------------------------------------
+    </div>
+</body>

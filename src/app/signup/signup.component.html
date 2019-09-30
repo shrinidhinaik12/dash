@@ -1,0 +1,19 @@
+<body>
+    <h1>Signup Form</h1>
+    <br><br>
+    <form [formGroup]="signup">
+    <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput formControlName = "email">
+    </mat-form-field>
+    <br><br><br>
+    <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput formControlName = "password">
+    </mat-form-field>
+    <br><br><br>
+    <button mat-raised-button type="submit" (click)="open(signup.value)">SUBMIT</button>
+    <br><br>
+    <p>Already have an account?<u style="text-decoration: none" routerLink = "login"> Login</u></p>
+    </form>
+</body>
