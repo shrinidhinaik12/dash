@@ -1,7 +1,7 @@
 <body>
     <mat-form-field>
     <mat-label>Search</mat-label>
-    <input matInput [(ngModel)]="Search">
+    <input matInput>
     </mat-form-field>
     &nbsp;
     <button mat-raised-button (click)=display()>Display</button>
@@ -15,7 +15,7 @@
             <th>Title</th>
             <th>Completed</th>
         </thead>
-        <tr *ngFor = "let a of data1 | filter : Search">
+        <tr *ngFor = "let a of data1">
             <td class="a">{{a.userId}}</td>
             <td class="a">{{a.id}}</td>
             &nbsp;
