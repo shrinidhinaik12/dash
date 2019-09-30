@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "ng build --output-path app --aot --prod"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +38,8 @@
     "@angular/language-service": "~8.2.0",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@angular/compiler": "~8.2.0",
+    "@angular/compiler-cli": "~8.2.0",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "enhanced-resolve": "^3.3.0",
@@ -50,10 +52,11 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
+    "typescript": "~3.5.3",
     "tslint": "~5.15.0"
   },
   "engines": {
     "node": "10.16.1",
-    "npm": "6.9.0"
+    "npm": "6.11.3"
   }
 }
