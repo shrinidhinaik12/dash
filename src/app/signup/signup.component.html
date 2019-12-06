@@ -4,16 +4,19 @@
     <form [formGroup]="signup">
     <mat-form-field>
     <mat-label>Email</mat-label>
-    <input matInput formControlName = "email">
+    <input matInput formControlName = "email">  <!--eve.holt@reqres.in -->
     </mat-form-field>
     <br><br><br>
     <mat-form-field>
     <mat-label>Password</mat-label>
-    <input matInput formControlName = "password">
+    <input matInput formControlName = "password"> <!--cityslicka-->
     </mat-form-field>
     <br><br><br>
     <button mat-raised-button type="submit" (click)="open(signup.value)">SUBMIT</button>
     <br><br>
     <p>Already have an account?<u style="text-decoration: none" routerLink = "login"> Login</u></p>
+    <br><br><br>
+    <p>eve.holt@reqres.in</p>
+    <p>cityslicka</p>
     </form>
 </body>

@@ -5,15 +5,18 @@
     <form [formGroup]="login">
         <mat-form-field>
         <mat-label>Email</mat-label>
-        <input matInput formControlName = "email">
+        <input matInput formControlName = "email"> <!--eve.holt@reqres.in -->
         </mat-form-field>
       <br><br>
         <mat-form-field>
         <mat-label>Password</mat-label>
-        <input matInput formControlName = "password">
+        <input matInput formControlName = "password"> <!--cityslicka-->
         </mat-form-field>
       <br><br><br>
       <button mat-button (click)="doLogin(login.value)">Login</button>
+      <br><br><br>
+      <p>eve.holt@reqres.in</p>
+      <p>cityslicka</p>
     </form>
     </div>
 </body>
